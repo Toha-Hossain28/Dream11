@@ -1,9 +1,13 @@
-import "./App.css";
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
 
 function App() {
   return (
     <>
-      <p className="bg-slate-400">Hello</p>
+      <div className="max-w-[1600px] mx-auto px-36 sora">
+        <Navbar />
+        <Banner />
+      </div>
     </>
   );
 }
