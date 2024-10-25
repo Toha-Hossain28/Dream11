@@ -52,7 +52,7 @@ Welcome to **Assignment -07**. This assignment involves building a React-based a
 
 ### Newsletter Section
 
-- Design the newsletter section according to Figma.
+- Design the newsletter section according to Figma.✅
 
 ### Footer
 
@@ -66,10 +66,10 @@ Welcome to **Assignment -07**. This assignment involves building a React-based a
   Replace all alerts in the interface with `React-Toastify` for better user notifications. ✅
 
 - **Implement Selected Player Remove Functionality**:
-  Add a "Remove" button to each selected player card. On click, the player should be removed from the selected players' section.
+  Add a "Remove" button to each selected player card. On click, the player should be removed from the selected players' section. ✅
 
 - **Add More Player Button Functionality**:
-  Implement an "Add More Players" button. On click, it should display the available player section again for the user to choose from.
+  Implement an "Add More Players" button. On click, it should display the available player section again for the user to choose from.✅
 
 - **Implement The Perfect Validation on Player selection**: - on clicking choose, player, if player selected previously then show user an alert(player already selected) and terminate. - if the selected player is already 6 then , show an alert and terminate ✅
 - **Change Your Web-Application Title**:

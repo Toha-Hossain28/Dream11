@@ -75,6 +75,23 @@ function App() {
 
   // console.log(selectedPlayers);
 
+  const removePlayer = (p) => {
+    const newSelectedPlayers = selectedPlayers.filter(
+      (player) => player.playerId !== p.playerId
+    );
+    setSelectedPlayers(newSelectedPlayers);
+    setRemainingCoin(remainingCoin + p.biddingPrice);
+    toast.warning("Player removed successfully", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      progress: undefined,
+      theme: "light",
+    });
+  };
+
   const addCoin = () => {
     let newCoin = remainingCoin + 6000000;
     setRemainingCoin(newCoin);
@@ -89,8 +106,13 @@ function App() {
     });
   };
 
-  const flipComponent = () => {
-    setSelected(!selected);
+  const flipComponent = (btnName) => {
+    if (btnName === "available") {
+      setSelected(true);
+    }
+    if (btnName === "selected") {
+      setSelected(false);
+    }
   };
   return (
     <>
@@ -116,7 +138,11 @@ function App() {
               selectPlayer={selectPlayer}
             />
           ) : (
-            <SelectedScreen selectedPlayers={selectedPlayers} />
+            <SelectedScreen
+              selectedPlayers={selectedPlayers}
+              flipComponent={flipComponent}
+              removePlayer={removePlayer}
+            />
           )}
         </div>
         <Newsletter />

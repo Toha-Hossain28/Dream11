@@ -1,5 +1,7 @@
-export default function SelectedPlayerCard({ p }) {
-  const { name, image, role, biddingPrice } = p;
+import PropTypes from "prop-types";
+
+export default function SelectedPlayerCard({ p, removePlayer }) {
+  const { name, image, role } = p;
   // console.log(p);
   return (
     <>
@@ -18,9 +20,17 @@ export default function SelectedPlayerCard({ p }) {
           </div>
         </div>
         <div className="text-red-600">
-          <i className="fa-solid fa-trash-can"></i>
+          <i
+            className="fa-solid fa-trash-can"
+            onClick={() => removePlayer(p)}
+          ></i>
         </div>
       </div>
     </>
   );
 }
+
+SelectedPlayerCard.propTypes = {
+  p: PropTypes.object,
+  removePlayer: PropTypes.func,
+};

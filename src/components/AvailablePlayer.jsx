@@ -17,7 +17,7 @@ export default function AvailablePlayer({
           className={`text-base px-4 py-3 rounded-l-xl border-l border-t border-b outline-none   ${
             selected ? "bg-[#E7FE29] font-bold" : "font-base"
           }`}
-          onClick={flipComponent}
+          onClick={() => flipComponent("available")}
         >
           Available
         </button>
@@ -25,7 +25,7 @@ export default function AvailablePlayer({
           className={`text-base px-4 py-3 rounded-r-xl border-r border-t border-b outline-none  ${
             !selected ? "bg-[#E7FE29] font-bold" : "font-base"
           }`}
-          onClick={flipComponent}
+          onClick={() => flipComponent("selected")}
         >
           Selected({selectedPlayersLength})
         </button>
