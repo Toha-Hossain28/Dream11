@@ -56,7 +56,7 @@ Welcome to **Assignment -07**. This assignment involves building a React-based a
 
 ### Footer
 
-- Design the footer section following the Figma design.
+- Design the footer section following the Figma design.✅
 
 ---
 

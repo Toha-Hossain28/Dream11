@@ -7,6 +7,7 @@ import AvailablePlayer from "./components/AvailablePlayer";
 import SelectedScreen from "./components/SelectedScreen";
 import SelectionScreen from "./components/SelectionScreen";
 import Footer from "./components/Footer";
+import Newsletter from "./components/Newsletter";
 
 function App() {
   const [remainingCoin, setRemainingCoin] = useState(0);
@@ -118,6 +119,7 @@ function App() {
             <SelectedScreen selectedPlayers={selectedPlayers} />
           )}
         </div>
+        <Newsletter />
 
         <ToastContainer />
       </div>
