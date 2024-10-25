@@ -6,6 +6,7 @@ import Banner from "./components/Banner";
 import AvailablePlayer from "./components/AvailablePlayer";
 import SelectedScreen from "./components/SelectedScreen";
 import SelectionScreen from "./components/SelectionScreen";
+import Footer from "./components/Footer";
 
 function App() {
   const [remainingCoin, setRemainingCoin] = useState(0);
@@ -120,6 +121,7 @@ function App() {
 
         <ToastContainer />
       </div>
+      <Footer />
     </>
   );
 }
