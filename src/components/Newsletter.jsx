@@ -7,7 +7,7 @@ export default function Newsletter() {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="w-full flex flex-col text-center py-[88px] rounded-lg bg-white"
+        className="w-full flex flex-col text-center py-[88px] rounded-lg bg-white border border-gray-200"
       >
         <h2 className="font-bold text-[32px] mb-4">
           Subscribe to our Newsletter

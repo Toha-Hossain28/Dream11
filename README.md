@@ -19,5 +19,10 @@ In **BPL-DREAM 11**, users can browse through a list of cricket players, select 
 - **Real-Time Player Updates**: Toggle between available and selected players.
 - **User Notifications**: Utilizes React-Toastify to inform users about actions taken, such as player selection or removal, enhancing the overall user experience.
 
-#Live site
+---
+
+# Live site
+
 https://bpldream11-assignment-toha.netlify.app/
+
+[github](https://github.com/programming-hero-web-course1/b10a7-dream-11-Toha-Hossain28)
