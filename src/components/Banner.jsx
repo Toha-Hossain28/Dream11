@@ -1,4 +1,6 @@
-function Banner() {
+import PropTypes from "prop-types";
+
+function Banner({ addCoin }) {
   return (
     <div
       style={{
@@ -20,12 +22,19 @@ function Banner() {
         </p>
       </div>
       <div className="border-2 border-[#E7FE29] p-2 rounded-[20px] mb-12">
-        <button className="bg-[#E7FE29] py-[14px] px-5 rounded-xl font-bold text-base text-[#131313">
+        <button
+          className="bg-[#E7FE29] py-[14px] px-5 rounded-xl font-bold text-base text-[#131313 outline-none"
+          onClick={addCoin}
+        >
           Claim Free Credits
         </button>
       </div>
     </div>
   );
 }
+
+Banner.propTypes = {
+  addCoin: PropTypes.func,
+};
 
 export default Banner;

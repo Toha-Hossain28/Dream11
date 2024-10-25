@@ -1,4 +1,5 @@
-function Navbar() {
+import PropTypes from "prop-types";
+function Navbar({ remainingCoin }) {
   return (
     <div className="flex justify-between items-center sora mt-12">
       <div>
@@ -10,11 +11,16 @@ function Navbar() {
         <p>Team</p>
         <p>Schedules</p>
         <div className="font-semibold text-[#131313] border-[1px] rounded-xl py-3 px-5 space-x-3">
-          0 Coins <i className="fa-solid fa-coins text-yellow-400 text-xl"></i>
+          {remainingCoin} Coins{" "}
+          <i className="fa-solid fa-coins text-yellow-400 text-xl"></i>
         </div>
       </div>
     </div>
   );
 }
+
+Navbar.propTypes = {
+  remainingCoin: PropTypes.number,
+};
 
 export default Navbar;
