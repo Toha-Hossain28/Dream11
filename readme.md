@@ -46,9 +46,9 @@ Welcome to **Assignment -07**. This assignment involves building a React-based a
 
 ### Selected Players
 
-- Display selected players' details in a card with one-column layout
-- Each card will have player image , name , player role, price.
-- a remove button for each player.
+- Display selected players' details in a card with one-column layout ✅
+- Each card will have player image , name , player role, price. ✅
+- a remove button for each player. ✅
 
 ### Newsletter Section
 

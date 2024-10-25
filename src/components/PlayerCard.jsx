@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 export default function PlayerCard({ p, selectPlayer }) {
   const { name, country, image, role, battingType, bowlingType, biddingPrice } =
     p;
+  // console.log(p);
   return (
     <div className="w-[425px] border p-6 rounded-3xl">
       <div>

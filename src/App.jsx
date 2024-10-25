@@ -100,7 +100,13 @@ function App() {
           selected={selected}
           selectedPlayersLength={selectedPlayers.length}
         />
-        <div className="grid grid-cols-3 gap-6">
+        <div
+          className={`${
+            selected
+              ? "grid grid-cols-3 gap-6 mb-20"
+              : "grid grid-cols-1 gap-y-6 mb-20"
+          }`}
+        >
           {selected ? (
             <SelectionScreen
               players={players}

@@ -7,7 +7,11 @@ export default function AvailablePlayer({
 }) {
   return (
     <div className="mt-12 flex justify-between items-center mb-12">
-      <div className="font-bold text-3xl text-[#131313]">Available Players</div>
+      <div className="font-bold text-3xl text-[#131313]">
+        {selected
+          ? "Available Players"
+          : `Selected Players (${selectedPlayersLength}/6)`}
+      </div>
       <div>
         <button
           className={`text-base px-4 py-3 rounded-l-xl border-l border-t border-b outline-none   ${
