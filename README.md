@@ -16,7 +16,7 @@ In **BPL-DREAM 11**, users can browse through a list of cricket players, select 
 ## Key Features
 
 - **Player Selection**: Users can select up to 6 players from a list while managing their available coins, ensuring a balanced team selection.
-- **Responsive Design**: The application is designed to be responsive, providing a seamless experience across devices.
+- **Real-Time Player Updates**: Toggle between available and selected players.
 - **User Notifications**: Utilizes React-Toastify to inform users about actions taken, such as player selection or removal, enhancing the overall user experience.
 
 #Live site
