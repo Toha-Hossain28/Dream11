@@ -42,8 +42,13 @@ export default function PlayerCard({ p, selectPlayer }) {
       </div>
       <div className="flex justify-between items-center text-base text-[#131313] font-semibold">
         <div>Price: ${biddingPrice}</div>
-        <div className="text-sm font-normal px-4 py-2 border rounded-lg">
-          <button onClick={() => selectPlayer(p)}>Choose Player</button>
+        <div className="text-sm font-normal  border rounded-lg">
+          <button
+            className="w-full h-full px-4 py-2 outline-none"
+            onClick={() => selectPlayer(p)}
+          >
+            Choose Player
+          </button>
         </div>
       </div>
     </div>

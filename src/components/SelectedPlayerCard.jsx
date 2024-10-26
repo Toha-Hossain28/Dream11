@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 export default function SelectedPlayerCard({ p, removePlayer }) {
-  const { name, image, role } = p;
+  const { name, image, role, biddingPrice } = p;
   // console.log(p);
   return (
     <>
@@ -17,6 +17,7 @@ export default function SelectedPlayerCard({ p, removePlayer }) {
           <div>
             <h3 className="text-xl font-bold">{name}</h3>
             <p className="text-gray-600">{role}</p>
+            <p className="text-gray-600 text-sm">${biddingPrice}</p>
           </div>
         </div>
         <div className="text-red-600">
